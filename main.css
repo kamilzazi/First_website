@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+    --glowny-kolor: #97B735;
+}
+
+/* NAWIGACJA */
+nav {
+    background-color: var(--glowny-kolor);
+}
+nav ul {
+    list-style: none; /* usuwamy kropki z <ul> */
+        padding: 10px;
+        margin: 0;
+}
+nav ul li {
+    display: inline; /* wyswietla linki liniowo w nawigacji */
+    margin: 20px;
+}
+nav ul li button {
+    padding: 5px;
+    color: var(--glowny-kolor);
+    font-size: 16px;
+    border-radius: 5px;
+}
+nav ul li a {
+    color: white; /*kolor linku biały */
+    text-decoration: none; /* nie chcemy mieć podkreślenia w linkach*/
+}
+
+/* GLOWNY BANER */
+#banner {
+    width: 100%;
+}
+
+/* OBRAZKI */
+#obrazki {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+}
+
+/* GŁÓWNA SEKCJA */
+article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    background-color: #54504F;
+    color: white;
+}
+article h2 {
+    color: var(--glowny-kolor);
+    margin-bottom: 10px;
+}
+article p a {
+    color: var(--glowny-kolor);
+}
+.kolumna {
+    padding: 30px;
+}
+#autor {
+    margin-top: 100px;
+    background-image: url('assets/avatar.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100px;
+    padding-left: 110px;
+}
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    background-color: var(--glowny-kolor);
+    color: white;
+    padding: 5px 100px 30px 100px;
+}
+footer div {
+    padding: 10px;
+}
+footer h4 {
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+footer h4 i{
+    font-size: 25px;
+}
+footer p {
+    margin: 0;
+    font-size: 10px;
+}
+footer i {
+    padding: 5px;
+}
